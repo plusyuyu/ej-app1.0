@@ -14,6 +14,7 @@ class IndexPage extends React.Component {
 
   // 当前组件绑定到根组件上执行【生命周期钩子】
   componentDidMount(){
+    console.log("====",this.props);
     this.loadCategory();
   }
 
@@ -42,7 +43,7 @@ class IndexPage extends React.Component {
             {
               this.state.categories.map((item)=>{
                 return (
-                  <li className={styles["category_list_item"]}>
+                  <li key={item.id} className={styles["category_list_item"]}>
                     <div></div>
                     <div>{item.name}</div>
                   </li>
