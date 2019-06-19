@@ -6,3 +6,7 @@
 .content {
   flex: 1;
 }
+
+.tabBar {
+  height: 100px;
+}
